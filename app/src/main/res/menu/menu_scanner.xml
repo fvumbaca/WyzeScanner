@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_scanner_info"
+          android:icon="@drawable/ic_action_info"
+          android:title="Scan Summery"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_scanner_start"
+          android:icon="@drawable/ic_action_start"
+          android:title="Start"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_scanner_stop"
+          android:icon="@drawable/ic_action_stop"
+          android:title="Stop"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_scanner_clear"
+          android:icon="@drawable/ic_action_clear"
+          android:title="Clear"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_scanner_settings"
+          android:title="Settings"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+
+</menu>

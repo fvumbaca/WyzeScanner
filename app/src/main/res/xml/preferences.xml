@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Scanning Settings"
+        >
+        <EditTextPreference
+            android:key="beacon_uuid"
+            android:defaultValue="72636a69-d9c1-475d-99dc-641899af656"
+            android:enabled="false"
+            android:summary="UUID of beacons"
+            android:title="Beacon UUID"
+            />
+        <CheckBoxPreference
+            android:key="scan_android_l_defaults"
+            android:title="Don't use Android L Default Configurations"
+            android:defaultValue="true"
+            />
+        <EditTextPreference
+            android:key="time_scan"
+            android:defaultValue="10"
+            android:title="Scan Time (ms)"
+            android:dependency="scan_android_l_defaults"
+            android:inputType="number"
+            />
+        <EditTextPreference
+            android:key="time_sleep"
+            android:defaultValue="10"
+            android:title="Sleep Time (ms)"
+            android:dependency="scan_android_l_defaults"
+            android:inputType="number"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>
